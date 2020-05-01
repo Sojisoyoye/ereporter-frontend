@@ -13,6 +13,10 @@ React Js
 - [**cd**] into the root of the **project directory**
 - Run `yarn install` on the terminal to install project dependencies
 
+## To get Data
+
+- Have the backend application, go [**here**](https://gitlab.com/Sojisoyoye/ereporter)
+for instruction.
 
 To run the application, run:
 
