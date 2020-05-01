@@ -1,0 +1,12 @@
+.header {
+    background-color: #0859C6;
+    height: 5em;
+    border-bottom: 5px solid rgb(60, 127, 172);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    padding-top: 20px;
+}
