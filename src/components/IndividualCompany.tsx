@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const IndividualCompany = (company: any) => {
+export const IndividualCompany = (props: any) => {
+    const { company } = props;
+
     return (
         <div className="city" key={company._id}>
             <div className="city-head">
@@ -14,7 +16,7 @@ export const IndividualCompany = (company: any) => {
                 <p>{company.description} </p>
             </div>
             <div className="pl-4 pb-2">
-                <span>Reports:</span>
+            <span>Number of Reports: {company.reports.length}</span>
             </div>
         </div>
     )

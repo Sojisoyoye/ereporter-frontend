@@ -30,7 +30,7 @@ const CompanyList = () => {
                         <p>{company.description} </p>
                     </div>
                     <div className="pl-4 pb-2">
-                        <span>Reports:</span>
+                    <span>Number of Reports: {company.reports.length}</span>
                     </div>
                 </div>
             ))}

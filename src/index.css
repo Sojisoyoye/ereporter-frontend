@@ -81,15 +81,6 @@ body {
 	color: black;
 }
 
-/* .description h2 {
-	font-family: Google Sans, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
-	font-size: 20px;
-	font-weight: 500;
-	letter-spacing: 0;
-	line-height: 30px;
-	margin: 0;
-	color: black;
-} */
 .contact {
 	color: #0c71e0;
 }
@@ -107,3 +98,25 @@ body {
 
 	.city:last-of-type { flex-grow: 0; }
 }
+
+thead button {
+	border: 0;
+	border-radius: none;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: inherit;
+	padding: 0.5em;
+	margin-bottom: 1px;
+  }
+  
+  thead button.ascending::after {
+	content: '👇';
+	display: inline-block;
+	margin-left: 1em;
+  }
+  
+  thead button.descending::after {
+	content: '☝️';
+	display: inline-block;
+	margin-left: 1em;
+  }
