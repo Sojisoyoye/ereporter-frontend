@@ -1,31 +1,27 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import api from '../../api/api';
+import api from "../../api/api";
 
 const useDataFromApi = (path: string) => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
-  useEffect(
-    () => {
-      const request = async () => {
-        try {
-          const response = await api.get(`/${path}`)
+  useEffect(() => {
+    const request = async () => {
+      try {
+        const response = await api.get(`/${path}`);
 
-          setData(response.data.data)
-        } catch (err) {
-          console.log(err.message)
-        }
-
+        setData(response.data.data);
+      } catch (err) {
+        console.log(err.message);
       }
+    };
 
-      request()
-    },
-    [path]
-  )
+    request();
+  }, [path]);
 
   return {
-    data
-  }
-}
+    data,
+  };
+};
 
-export default useDataFromApi
+export default useDataFromApi;
